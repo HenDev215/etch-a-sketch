@@ -1,0 +1,21 @@
+grid {
+    border: 1px solid red;
+    width: 16px;
+    height: 16px;
+}
+
+grid:hover {
+    background-color: gold;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}

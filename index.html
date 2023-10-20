@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="btnContainer">
+        <button class="btn">How Many Squares?</button>
+    </div>
+    
+    <div id="container">
+        
+    </div>
+</body>
+<script>
+
+    const button = document.getElementById('.btn')
+    const container = document.getElementById('container');
+    
+   
+    const createRow = function() {
+        
+        for (let i = 0; i < 16; i++) {
+            const grid = document.createElement('grid');
+            container.appendChild(grid);
+        }
+
+    }
+
+    createRow();
+
+    const createGrid = function() {
+        for (let i = 0; i < 15; i++) {
+            let clone = container.cloneNode(true);
+            document.body.appendChild(clone);
+        }
+    }
+    
+
+    createGrid();
+
+</script>
+</html>
